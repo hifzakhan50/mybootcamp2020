@@ -26,7 +26,7 @@ jobs:
       with:
        node-version: 12
     - name: Install Surge
-      run: npm Install -g surge
+      run: npm install -g surge
     - name: RunSurge
       run: surge./ mybootcampnewapp.surge.sh --token${{secrets.MY_SURGE_TOKEN}}
       
